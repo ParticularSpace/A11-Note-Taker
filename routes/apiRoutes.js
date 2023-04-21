@@ -16,16 +16,27 @@ const writeNotes = (notes) => {
 
 //Get all notes
 router.get('/api/notes', (req, res) => {
+    const notes = readNotes();
+    res.json(notes);
     });
 
 //Add new notes
 router.post('/api/notes', (req, res) => {
+    const newNote = { ...req.body, id: uuid.v4() };
     const notes = readNotes();
+    notes.push(newNote);
+    writeNotes(notes);
     res.json(notes);
     });
 
 //Delete notes
 router.delete('/api/notes/:id', (req, res) => {
-
-
+    const noteId = req.params.id;
+    const notes = readNotes();
+    const updateNotes = notes.filter((note) => note.id !== noteId);
+    writeNotes(updateNotes);
+    res.json(updateNotes);
     });
+
+
+module.exports = router;
