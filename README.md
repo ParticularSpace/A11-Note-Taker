@@ -9,7 +9,6 @@ A notes application that can be used to write and save notes. This application u
 ## Table of Contents
 
   - [Usage](#usage)
-  - [Video Walkthrough](#video-walkthrough)
   - [Screenshot](#screenshot)
   - [Credits](#credits)
   - [License](#license)
@@ -20,12 +19,11 @@ To use this application, click the take notes button to begin. Then you can ente
 
 ## Screenshot
 
-![A picture of the logo](assets/svgviewer-png-output.png "Generated Logo")
+![A picture of the logo](public/assets/images/localhost_3001_notes.png "Generated Logo")
 
 ## Credits
  - Manny, Professor at Boot Camp (Class notes)
- - Mdn Web Docs (SVG Documentation)
- - Chat GPT (Regex GOD)
+ - Mdn Web Docs
  - UC Berkeley Coding Boot Camp Extension
 
 ## License
