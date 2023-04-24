@@ -1,3 +1,6 @@
+//This is my apiRoutes.js file that services all the api requests. 
+
+
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
@@ -5,6 +8,7 @@ const uuid = require('uuid');
 const path = require('path');
 const db = path.join(__dirname, '../db/db.json');
 
+// Functions to read and write notes
 const readNotes = () => {
     const notes = fs.readFileSync(db, 'utf8');
     return JSON.parse(notes);
