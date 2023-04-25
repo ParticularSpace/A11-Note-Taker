@@ -1,8 +1,5 @@
 //This is my apiRoutes.js file that services the api requests. 
-
-
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
 const fs = require('fs');
 const uuid = require('uuid');
 const path = require('path');
@@ -21,6 +18,9 @@ const writeNotes = (notes) => {
 //Get all notes
 router.get('/api/notes', (req, res) => {
     const notes = readNotes();
+    if (err){
+        return res.status(500).json(err);
+    }
     res.json(notes);
     });
 
@@ -30,6 +30,9 @@ router.post('/api/notes', (req, res) => {
     const notes = readNotes();
     notes.push(newNote);
     writeNotes(notes);
+    if(err){
+        return res.status(500).json(err);
+    }
     res.json(notes);
     });
 
@@ -39,6 +42,9 @@ router.delete('/api/notes/:id', (req, res) => {
     const notes = readNotes();
     const updateNotes = notes.filter((note) => note.id !== noteId);
     writeNotes(updateNotes);
+    if(err){
+        return res.status(500).json(err);
+    }
     res.json(updateNotes);
     });
 
