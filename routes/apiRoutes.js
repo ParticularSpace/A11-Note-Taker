@@ -1,4 +1,4 @@
-//This is my apiRoutes.js file that services all the api requests. 
+//This is my apiRoutes.js file that services the api requests. 
 
 
 const express = require('express');

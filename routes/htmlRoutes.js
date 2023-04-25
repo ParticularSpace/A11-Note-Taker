@@ -1,4 +1,4 @@
-//Attempted to use best practice for seprating routes out into their own fieles. Here is my htmlRoutes.js file.
+//Attempted to use best practice for seprating routes out into their own files. Here is my htmlRoutes.js file.
 
 
 const express = require('express');
