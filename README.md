@@ -9,13 +9,19 @@ A notes application that can be used to write and save notes. This application u
 ## Table of Contents
 
   - [Usage](#usage)
+  - [Functionality Video](#functionality-video)
   - [Screenshot](#screenshot)
   - [Credits](#credits)
   - [License](#license)
 
 ## Usage
 
-To use this application, click the take notes button to begin. Then you can enter your notes or view older saved notes. To save a note, click the save icon in the top right corner. To delete a note, click the trash icon next to the note you want to delete.    
+To use this application, click the take notes button to begin. Then you can enter your notes or view older saved notes. To save a note, click the save icon in the top right corner. To delete a note, click the trash icon next to the note you want to delete.
+
+## Functionality Video
+
+[Functionality video](https://drive.google.com/file/d/1DeK0coSmxheEvSAGqRQwzWHWiVmqHFNV/view "Video Walkthrough")
+
 
 ## Screenshot
 
